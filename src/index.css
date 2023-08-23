@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -36,7 +40,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+/* .button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -46,7 +50,30 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+} */
+
+.square {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 3px;
 }
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 105px;
+  height: 105px; */
+}
+
 button:hover {
   border-color: #646cff;
 }
@@ -63,7 +90,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  .square {
     background-color: #f9f9f9;
   }
 }
